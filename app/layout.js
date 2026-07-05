@@ -1,19 +1,19 @@
 import './globals.css';
-// import Header from '../components/Header';
-// import Footer from '../components/Footer';
+import { Syne, Inter } from 'next/font/google';
+
+const syne = Syne({ subsets: ['latin'], variable: '--font-syne', weight: ['600', '700', '800'] });
+const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 
 export const metadata = {
-  title: 'Link in Bio Templates by Sanzy',
-  description: 'Koleksi template link in bio premium untuk personal branding dan bisnis.',
+  title: 'PortalLanding — Halaman yang Menjual',
+  description: 'PortalLanding: 17 landing page dengan tujuan berbeda — click-through, lead gen, sales, webinar, hingga company profile. Semua dirancang untuk konversi.',
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="id">
-      <body className="bg-white text-gray-900">
-        {/* <Header /> */}
+      <body className={`${syne.variable} ${inter.variable} antialiased`}>
         <main>{children}</main>
-        {/* <Footer /> */}
       </body>
     </html>
   );

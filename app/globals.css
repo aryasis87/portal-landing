@@ -1,35 +1,39 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --font-display: var(--font-syne), system-ui, sans-serif;
+  --font-sans: var(--font-inter), system-ui, sans-serif;
+
+  --color-inkl: #101014;
+  --color-kreml: #f6f3ec;
+  --color-oranyel: #ff5c1c;
+  --color-mutedl: #6d6a63;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+html { scroll-behavior: smooth; }
 
 body {
-  background-color: #ffffff;
-  color: #1e293b; /* Tailwind slate-800, gelap tapi adem */
-  font-family: 'Inter', sans-serif;
-  overscroll-behavior-y: contain;
+  background-color: var(--color-kreml);
+  color: var(--color-inkl);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
 }
 
-.scrollbar-hide::-webkit-scrollbar {
-  display: none;
+h1, h2, h3 { font-family: var(--font-display); letter-spacing: -0.02em; }
+
+/* Kartu billboard: frame tebal + tiang bayangan */
+.papan { border: 3px solid var(--color-inkl); background: #fff; box-shadow: 8px 8px 0 var(--color-inkl); transition: transform 0.2s ease, box-shadow 0.2s ease; }
+.group:hover .papan { transform: translate(-3px, -3px); box-shadow: 12px 12px 0 var(--color-oranyel); }
+
+/* Meter konversi dekoratif */
+.meter { height: 6px; border-radius: 9999px; background: repeating-linear-gradient(90deg, var(--color-oranyel) 0 14px, transparent 14px 18px); }
+
+/* Pola diagonal tipis */
+.diag {
+  background-image: repeating-linear-gradient(-45deg, transparent 0 18px, rgba(16, 16, 20, 0.04) 18px 19px);
 }
-.scrollbar-hide {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
+
+@keyframes marquee-x { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+.animate-marquee-x { animation: marquee-x 30s linear infinite; }
+
+:focus-visible { outline: 3px solid var(--color-oranyel); outline-offset: 3px; }

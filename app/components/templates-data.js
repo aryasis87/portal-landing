@@ -1,98 +1,19 @@
 export const templates = [
-  {
-    url: "https://personalbranding1.vercel.app",
-    name: "Clean",
-    description: "Desain bersih dan elegan untuk profesional kreatif dengan tata letak simpel",
-    image: "/images/pb1.png",
-    category: "Profesional",
-    tags: ["Minimal", "Elegan", "Portfolio"]
-  },
-  {
-    url: "https://personalbranding2.vercel.app",
-    name: "Agencia",
-    description: "Tampilkan karya Anda dengan galeri visual yang memukau dan interaktif",
-    image: "/images/pb2.png",
-    category: "Kreatif",
-    tags: ["Galeri", "Interaktif", "Portfolio"]
-  },
-  {
-    url: "https://personalbranding3.vercel.app",
-    name: "Playfull",
-    description: "Template profesional untuk bisnis dengan penekanan pada konversi tinggi",
-    image: "/images/pb3.png",
-    category: "Bisnis",
-    tags: ["Perusahaan", "Konversi", "Profesional"]
-  },
-  {
-    url: "https://personalbranding4.vercel.app",
-    name: "Futuristic",
-    description: "Template energik untuk influencer dengan integrasi media sosial lengkap",
-    image: "/images/pb4.png",
-    category: "Media Sosial",
-    tags: ["Sosial Media", "Viral", "Personal Branding"]
-  },
-  {
-    url: "https://personalbranding5.vercel.app",
-    name: "Bisnisku",
-    description: "Template romantis untuk pasangan yang berbagi momen spesial mereka",
-    image: "/images/pb5.png",
-    category: "Acara",
-    tags: ["Pernikahan", "Acara", "Romantis"]
-  },
-  {
-    url: "https://personalbranding6.vercel.app",
-    name: "Retro",
-    description: "Solusi lengkap untuk startup dengan fitur produk dan tim yang modern",
-    image: "/images/pb6.png",
-    category: "Bisnis",
-    tags: ["Startup", "Teknologi", "Inovatif"]
-  },
-  {
-    url: "https://personalbranding7.vercel.app",
-    name: "Persona",
-    description: "Bagikan petualangan Anda dengan peta interaktif dan galeri perjalanan",
-    image: "/images/pb7.png",
-    category: "Travel",
-    tags: ["Petualangan", "Peta", "Travel"]
-  },
-  {
-    url: "https://personalbranding8.vercel.app",
-    name: "Matrix",
-    description: "Template dinamis untuk musisi dengan pemutar musik built-in yang elegan",
-    image: "/images/pb8.png",
-    category: "Musik",
-    tags: ["Musik", "Artis", "Audio"]
-  },
-  {
-    url: "https://personalbranding9.vercel.app",
-    name: "Cutie",
-    description: "Template energik untuk pelatih kebugaran dengan jadwal kelas online",
-    image: "/images/pb9.png",
-    category: "Kesehatan",
-    tags: ["Kebugaran", "Kesehatan", "Olahraga"]
-  },
-  {
-    url: "https://personalbranding10.vercel.app",
-    name: "Angkringan",
-    description: "Template hangat untuk kafe dengan menu digital dan sistem reservasi",
-    image: "/images/pb10.png",
-    category: "Kuliner",
-    tags: ["Makanan", "Minuman", "Kafe"]
-  },
-  {
-    url: "https://personalbranding11.vercel.app",
-    name: "Jajan",
-    description: "Galeri foto fullscreen dengan lightbox dan efek zoom yang memukau",
-    image: "/images/pb11.png",
-    category: "Fotografi",
-    tags: ["Foto", "Galeri", "Visual"]
-  },
-  {
-    url: "https://personalbranding12.vercel.app",
-    name: "SKT",
-    description: "Template ramah lingkungan dengan nuansa alam dan elemen organik",
-    image: "/images/pb12.png",
-    category: "Lifestyle",
-    tags: ["Alam", "Organik", "Hijau"]
-  }
+  { name: 'Nimbus Cloud', kategori: 'Click-Through', description: 'Landing cloud SaaS — dorong pengunjung ke uji coba gratis 14 hari.', image: '/images/l1.png', url: '#' },
+  { name: 'EduPlay', kategori: 'Click-Through', description: 'Aplikasi edukasi & game imersif — belajar sambil bermain.', image: '/images/l2.png', url: '#' },
+  { name: 'Cissy Coffee', kategori: 'Profil', description: 'Company profile kedai kopi premium dengan suasana cozy.', image: '/images/l3.png', url: '#' },
+  { name: 'SanzyHub', kategori: 'Platform', description: 'Hub jasa & template website premium, lengkap dengan alur pembayaran.', image: '/images/l4.png', url: '#' },
+  { name: 'Tasty Corner', kategori: 'Lead Gen', description: 'Lead generation F&B gelap nan berani — ubah audiens jadi pelanggan.', image: '/images/l5.png', url: '#' },
+  { name: 'Rasa Nusantara', kategori: 'Lead Gen', description: 'Kuliner tradisional dengan sentuhan modern yang menggugah.', image: '/images/l6.png', url: '#' },
+  { name: 'CitaRasa Digital', kategori: 'Lead Gen', description: 'Retro 1985 — solusi digital untuk bisnis kuliner klasik.', image: '/images/l7.png', url: '#' },
+  { name: 'SkyWings', kategori: 'Produk', description: 'Maskapai modern — rasakan keajaiban terbang, pesan tiket mudah.', image: '/images/l8.png', url: '#' },
+  { name: 'Bribu', kategori: 'Platform', description: 'Platform kontes desain — temukan desainer berbakat secara online.', image: '/images/l9.png', url: '#' },
+  { name: 'LuxeElectro', kategori: 'Sales', description: 'Elektronik premium beraksen ungu untuk hidup lebih mewah.', image: '/images/l10.png', url: '#' },
+  { name: 'MODEWEAR', kategori: 'Sales', description: 'Fashion editorial — koleksi terbaru untuk semua musim.', image: '/images/l11.png', url: '#' },
+  { name: 'Woodora', kategori: 'Sales', description: 'Furnitur kayu solid untuk rumah impian yang hangat.', image: '/images/l12.png', url: '#' },
+  { name: 'Zychrome', kategori: 'Webinar', description: 'Webinar interaktif untuk mengasah skill dari para ahli.', image: '/images/l13.png', url: '#' },
+  { name: 'Lumicast', kategori: 'Webinar', description: 'Menerangi pikiran — webinar eksklusif untuk masa depanmu.', image: '/images/l14.png', url: '#' },
+  { name: 'NextTalks', kategori: 'Webinar', description: 'Ide besar & pembicara inspiratif dalam satu platform.', image: '/images/l15.png', url: '#' },
+  { name: 'Elevinar', kategori: 'Webinar', description: 'Naikkan level wawasanmu lewat sesi yang meledakkan semangat.', image: '/images/l16.png', url: '#' },
+  { name: 'Sribu Redesign', kategori: 'Platform', description: 'Redesign landing Sribu — platform kontes desain terbaik.', image: '/images/l17.png', url: '#' },
 ];
