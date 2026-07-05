@@ -4,10 +4,10 @@ import { Syne, Inter } from 'next/font/google';
 const syne = Syne({ subsets: ['latin'], variable: '--font-syne', weight: ['600', '700', '800'] });
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 
-const __jsonld = {"@context":"https://schema.org","@type":"CollectionPage","name":"PortalLanding","description":"Koleksi 17 landing page","url":"https://portal-landing.vercel.app","isPartOf":{"@type":"WebSite","name":"PintuWeb","url":"https://pintuweb.id"}};
+const __jsonld = {"@context":"https://schema.org","@type":"CollectionPage","name":"PortalLanding","description":"Koleksi 17 landing page","url":"https://landing.pintuweb.com","isPartOf":{"@type":"WebSite","name":"PintuWeb","url":"https://pintuweb.com"}};
 
 export const metadata = {
-  metadataBase: new URL("https://portal-landing.vercel.app"),
+  metadataBase: new URL("https://landing.pintuweb.com"),
   title: "PortalLanding — Halaman yang Menjual",
   description: "PortalLanding: 17 landing page dengan tujuan berbeda — click-through, lead gen, sales, webinar, hingga company profile.",
   applicationName: "PortalLanding",
@@ -15,11 +15,11 @@ export const metadata = {
   authors: [{ name: "PortalLanding" }],
   creator: "PortalLanding",
   publisher: "PortalLanding",
-  alternates: { canonical: "https://portal-landing.vercel.app" },
+  alternates: { canonical: "https://landing.pintuweb.com" },
   openGraph: {
     type: "website",
     locale: "id_ID",
-    url: "https://portal-landing.vercel.app",
+    url: "https://landing.pintuweb.com",
     siteName: "PortalLanding",
     title: "PortalLanding — Halaman yang Menjual",
     description: "PortalLanding: 17 landing page dengan tujuan berbeda — click-through, lead gen, sales, webinar, hingga company profile.",
