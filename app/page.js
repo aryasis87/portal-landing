@@ -17,7 +17,7 @@ export default function PortalLanding() {
       {/* Navbar */}
       <header className="sticky top-0 z-40 border-b-[3px] border-inkl bg-kreml/90 backdrop-blur-xl">
         <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
-          <a href="#" className="flex items-center gap-2 font-display text-lg font-extrabold">
+          <a href="/" className="flex items-center gap-2 font-display text-lg font-extrabold">
             <span className="grid h-9 w-9 place-items-center border-[3px] border-inkl bg-oranyel text-white shadow-[3px_3px_0_var(--color-inkl)]"><Megaphone size={16} /></span>
             PortalLanding
           </a>
