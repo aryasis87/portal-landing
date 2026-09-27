@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# PortalLanding — Halaman yang Menjual
 
-## Getting Started
+PortalLanding: 17 landing page dengan tujuan berbeda — click-through, lead gen, sales, webinar, hingga company profile.
 
-First, run the development server:
+**Demo live:** https://portal-landing-seven.vercel.app
+
+![Tangkapan layar PortalLanding](public/og.jpg)
+
+> Katalog demo milik PintuWeb. Setiap kartu menautkan ke demo live yang bisa dicoba.
+
+## Konsep
+
+"Halaman yang Menjual": katalog landing page dengan kartu billboard, bayangan oranye yang tegas, dan meteran konversi.
+
+## Varian yang dipamerkan (17)
+
+- [Bribu](https://landing-bribu.vercel.app)
+- [Cissy Coffee](https://landing-cissycoffee.vercel.app)
+- [CitaRasa Digital](https://landing-citarasa.vercel.app)
+- [EduPlay](https://landing-eduplay.vercel.app)
+- [Elevinar](https://landing-elevinar.vercel.app)
+- [Lumicast](https://landing-lumicast.vercel.app)
+- [LuxeElectro](https://landing-luxeelectro.vercel.app)
+- [MODEWEAR](https://landing-modewear.vercel.app)
+- [NextTalks](https://landing-nexttalks.vercel.app)
+- [Nimbus Cloud](https://landing-nimbus.vercel.app)
+- [Rasa Nusantara](https://landing-rasanusantara.vercel.app)
+- [SanzyHub](https://landing-sanzyhub.vercel.app)
+- [SkyWings](https://landing-skywings.vercel.app)
+- [Sribu](https://landing-sribu.vercel.app)
+- [Tasty Corner](https://landing-tastycorner.vercel.app)
+- [Woodora](https://landing-woodora.vercel.app)
+- [Zychrome](https://landing-zychrome.vercel.app)
+
+## Halaman
+
+`/`
+
+## Teknologi
+
+- Next.js 15.5 (App Router) dan React 19
+- Tailwind CSS v4
+- JavaScript
+- Framer Motion, Lucide (ikon)
+- Font: Syne, Inter (next/font)
+- SEO: metadata per halaman, Open Graph, JSON-LD, sitemap.xml, dan robots.txt
+
+## Menjalankan secara lokal
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Buka http://localhost:3000. Untuk build produksi: `npm run build` lalu `npm start`.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Dibuat oleh [PintuWeb](https://pintuweb.com), jasa pembuatan website.
