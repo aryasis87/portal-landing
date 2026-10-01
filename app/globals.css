@@ -7,6 +7,7 @@
   --color-inkl: #101014;
   --color-kreml: #f6f3ec;
   --color-oranyel: #ff5c1c;
+  --color-oranyel-ink: #b8400f; /* oranye gelap untuk teks kecil & tombol aktif (5:1 di atas krem) */
   --color-mutedl: #6d6a63;
 }
 

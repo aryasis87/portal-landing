@@ -92,7 +92,7 @@ export default function PortalLanding() {
         <div className="mx-auto max-w-7xl">
           <div className="flex flex-wrap items-end justify-between gap-4">
             <div>
-              <p className="font-display text-xs font-bold uppercase tracking-[0.25em] text-oranyel">Etalase</p>
+              <p className="font-display text-xs font-bold uppercase tracking-[0.25em] text-oranyel-ink">Etalase</p>
               <h2 className="mt-2 font-display text-3xl font-extrabold md:text-4xl">Pilih tujuanmu</h2>
             </div>
             <div className="flex flex-wrap gap-2">
@@ -101,7 +101,7 @@ export default function PortalLanding() {
                   key={k}
                   onClick={() => setKat(k)}
                   aria-pressed={kat === k}
-                  className={`border-2 border-inkl px-3.5 py-1.5 text-xs font-bold transition ${kat === k ? 'bg-oranyel text-white shadow-[3px_3px_0_var(--color-inkl)]' : 'bg-white hover:bg-inkl hover:text-kreml'}`}
+                  className={`border-2 border-inkl px-3.5 py-1.5 text-xs font-bold transition ${kat === k ? 'bg-oranyel-ink text-white shadow-[3px_3px_0_var(--color-inkl)]' : 'bg-white hover:bg-inkl hover:text-kreml'}`}
                 >
                   {k}
                 </button>
@@ -137,6 +137,10 @@ export default function PortalLanding() {
                       <ArrowUpRight size={17} className="shrink-0 text-mutedl transition group-hover:text-oranyel" />
                     </div>
                     <p className="mt-1 text-sm leading-relaxed text-mutedl">{t.description}</p>
+                    <p className="mt-3 flex flex-wrap items-center gap-2 text-xs font-bold">
+                      <span className="border-2 border-inkl bg-white px-2 py-0.5">{t.halaman} halaman</span>
+                      <span className="border-2 border-inkl bg-kreml px-2 py-0.5">{t.sorot}</span>
+                    </p>
                     <div className="meter mt-3 w-2/3 opacity-70" aria-hidden="true" />
                   </div>
                 </motion.article>
@@ -154,7 +158,7 @@ export default function PortalLanding() {
             {[
               { icon: Target, title: 'Satu tujuan', desc: 'Tanpa distraksi — setiap elemen mengarah ke satu aksi utama.' },
               { icon: MousePointerClick, title: 'CTA yang berani', desc: 'Tombol jelas, copywriting tajam, posisi tepat di momen yakin.' },
-              { icon: TrendingUp, title: 'Bukti yang meyakinkan', desc: 'Testimoni, angka, dan logo klien di saat keraguan muncul.' },
+              { icon: TrendingUp, title: 'Bukti yang bisa dicek', desc: 'Angka, demo yang bisa dicoba, dan studi kasus — bukan testimoni karangan atau logo pinjaman.' },
             ].map((p, i) => (
               <motion.div key={p.title} initial={{ opacity: 0, y: 18 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }} className="border-[3px] border-inkl bg-kreml p-7 shadow-[5px_5px_0_var(--color-inkl)]">
                 <span className="grid h-12 w-12 place-items-center border-[3px] border-inkl bg-oranyel text-white"><p.icon size={22} /></span>
@@ -170,7 +174,7 @@ export default function PortalLanding() {
       <section id="proses" className="scroll-mt-24 border-t-[3px] border-inkl bg-kreml px-4 py-16 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-7xl">
           <div className="text-center">
-            <p className="font-display text-xs font-bold uppercase tracking-[0.25em] text-oranyel">Proses</p>
+            <p className="font-display text-xs font-bold uppercase tracking-[0.25em] text-oranyel-ink">Proses</p>
             <h2 className="mt-2 font-display text-3xl font-extrabold md:text-4xl">Dari brief ke <span className="bg-oranyel px-2 text-white">tayang</span></h2>
           </div>
           <div className="mt-12 grid gap-6 md:grid-cols-3">
@@ -210,7 +214,7 @@ export default function PortalLanding() {
       <section id="tanya" className="scroll-mt-24 border-t-[3px] border-inkl bg-white px-4 py-16 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-3xl">
           <div className="text-center">
-            <p className="font-display text-xs font-bold uppercase tracking-[0.25em] text-oranyel">FAQ</p>
+            <p className="font-display text-xs font-bold uppercase tracking-[0.25em] text-oranyel-ink">FAQ</p>
             <h2 className="mt-2 font-display text-3xl font-extrabold md:text-4xl">Sebelum kamu <span className="bg-oranyel px-2 text-white">klik pesan</span></h2>
           </div>
           <div className="mt-10 space-y-4">
@@ -272,7 +276,7 @@ export default function PortalLanding() {
             </ul>
           </div>
         </div>
-        <p className="mt-10 border-t border-kreml/10 pt-5 text-center text-xs text-kreml/40">
+        <p className="mt-10 border-t border-kreml/10 pt-5 text-center text-xs text-kreml/65">
           © {new Date().getFullYear()} PortalLanding · bagian dari PintuWeb — dibuat untuk konversi.
         </p>
       </footer>
