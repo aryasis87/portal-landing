@@ -11,14 +11,14 @@ const KATEGORI = ['Semua', 'Click-Through', 'Lead Gen', 'Sales', 'Webinar', 'Pro
 const PROSES = [
   { icon: FileText, no: '01', title: 'Kirim Brief', desc: 'Produk apa, target siapa, aksi apa yang kamu mau — cukup lewat WhatsApp.' },
   { icon: Paintbrush, no: '02', title: 'Kami Racik', desc: 'Copywriting + desain dari template pilihanmu, disesuaikan brand-mu.' },
-  { icon: Rocket, no: '03', title: 'Tayang & Menjual', desc: 'Halaman live dalam 1–2 hari, siap menampung klik dan konversi.' },
+  { icon: Rocket, no: '03', title: 'Tayang & Menjual', desc: 'Halaman live dalam 1–3 hari kerja, siap menampung klik dan konversi.' },
 ];
 
 const JAMINAN = [
-  { icon: Gauge, v: '95+', l: 'Skor performa Google' },
+  { icon: Gauge, v: '90+', l: 'Target skor PageSpeed' },
   { icon: Search, v: 'SEO', l: 'Siap diranking' },
   { icon: Smartphone, v: '100%', l: 'Mobile-friendly' },
-  { icon: TrendingUp, v: '1–2 hari', l: 'Sampai tayang' },
+  { icon: TrendingUp, v: '1–3 hari', l: 'Kerja sampai tayang' },
 ];
 
 const TANYA = [
@@ -26,7 +26,7 @@ const TANYA = [
   { q: 'Apakah termasuk copywriting?', a: 'Ya. Kami bantu menulis headline dan copy yang menjual berdasarkan brief-mu — kamu tinggal review dan setujui.' },
   { q: 'Bagaimana dengan formulir dan integrasi WhatsApp?', a: 'Semua CTA bisa diarahkan ke WhatsApp, formulir, e-commerce, atau link pembayaran. Kamu tentukan aksinya, kami pasang jalurnya.' },
   { q: 'Apakah halaman bisa dipakai untuk iklan (Meta/Google Ads)?', a: 'Sangat bisa — halaman ringan dan cepat justru menurunkan biaya iklan. Pixel/tag analytics juga bisa kami pasangkan.' },
-  { q: 'Berapa biayanya?', a: 'Mulai Rp200 ribu untuk satu halaman penuh (desain + copy + tayang). Konsultasi dulu gratis; harga final menyesuaikan kebutuhan.' },
+  { q: 'Berapa biayanya?', a: 'Paket Landing Page PintuWeb Rp600 ribu–Rp1,2 juta untuk satu halaman (desain, copy, tayang), selesai 1–3 hari kerja. Konsultasi dulu gratis; harga final menyesuaikan kebutuhan.' },
 ];
 
 export default function PortalLanding() {
@@ -39,7 +39,7 @@ export default function PortalLanding() {
       {/* Navbar */}
       <header className="sticky top-0 z-40 border-b-[3px] border-inkl bg-kreml/90 backdrop-blur-xl">
         <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
-          <a href="#top" className="flex items-center gap-2 font-display text-lg font-extrabold">
+          <a href="#top" className="flex min-w-0 items-center gap-2 font-display text-base font-extrabold sm:text-lg">
             <span className="grid h-9 w-9 place-items-center border-[3px] border-inkl bg-oranyel text-white shadow-[3px_3px_0_var(--color-inkl)]"><Megaphone size={16} /></span>
             PortalLanding
           </a>
@@ -48,7 +48,7 @@ export default function PortalLanding() {
             <a href="#proses" className="transition hover:text-oranyel">Proses</a>
             <a href="#tanya" className="transition hover:text-oranyel">FAQ</a>
           </div>
-          <a href={WA} target="_blank" rel="noopener noreferrer" className="border-[3px] border-inkl bg-inkl px-5 py-2 font-display text-sm font-bold text-kreml transition hover:bg-oranyel">
+          <a href={WA} target="_blank" rel="noopener noreferrer" className="shrink-0 border-[3px] border-inkl bg-inkl px-3 py-2 font-display text-sm font-bold text-kreml transition hover:bg-oranyel-ink sm:px-5">
             Pesan Landing
           </a>
         </nav>
@@ -60,7 +60,7 @@ export default function PortalLanding() {
           <span className="inline-block border-[3px] border-inkl bg-white px-4 py-1.5 text-xs font-bold uppercase tracking-wide shadow-[3px_3px_0_var(--color-inkl)]">
             17 template · 7 tujuan konversi
           </span>
-          <h1 className="mt-7 font-display text-5xl font-extrabold leading-[1.02] sm:text-7xl">
+          <h1 className="mt-7 font-display text-[2.35rem] font-extrabold leading-[1.02] min-[360px]:text-[2.6rem] sm:text-7xl">
             Halaman yang<br /><span className="bg-oranyel px-3 text-white">menjual.</span>
           </h1>
           <p className="mx-auto mt-6 max-w-xl text-lg text-mutedl">
@@ -187,7 +187,7 @@ export default function PortalLanding() {
                 transition={{ delay: i * 0.1, duration: 0.45 }}
                 className="relative border-[3px] border-inkl bg-white p-7 shadow-[5px_5px_0_var(--color-inkl)]"
               >
-                <span className="absolute right-5 top-4 font-display text-5xl font-extrabold text-inkl/10">{p.no}</span>
+                <span data-no={p.no} className="absolute right-5 top-4 font-display text-5xl font-extrabold text-inkl/10 before:content-[attr(data-no)]" aria-hidden="true" />
                 <span className="grid h-12 w-12 place-items-center border-[3px] border-inkl bg-oranyel text-white"><p.icon size={22} /></span>
                 <h3 className="mt-4 font-display text-lg font-bold">{p.title}</h3>
                 <p className="mt-2 text-sm text-mutedl">{p.desc}</p>
@@ -245,7 +245,7 @@ export default function PortalLanding() {
         <motion.div initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5 }} className="mx-auto max-w-xl">
           <h2 className="font-display text-3xl font-extrabold leading-tight md:text-5xl">Bisnismu butuh <span className="text-oranyel">halaman yang bekerja</span>.</h2>
           <p className="mt-4 text-kreml/60">Pilih template, kirim materi, dan halamanmu siap menjual dalam hitungan hari.</p>
-          <a href={WA} target="_blank" rel="noopener noreferrer" className="mt-8 inline-flex items-center gap-2 bg-oranyel px-9 py-4 font-display text-sm font-bold text-white transition hover:scale-[1.03] active:scale-95">
+          <a href={WA} target="_blank" rel="noopener noreferrer" className="mt-8 inline-flex items-center gap-2 bg-oranyel px-9 py-4 font-display text-sm font-bold text-inkl transition hover:scale-[1.03] active:scale-95">
             <MessageCircle size={16} /> Chat WhatsApp
           </a>
         </motion.div>
@@ -272,7 +272,7 @@ export default function PortalLanding() {
             <p className="font-display text-xs font-bold uppercase tracking-widest text-oranyel">Hubungi</p>
             <ul className="mt-3 space-y-2">
               <li><a href={WA} target="_blank" rel="noopener noreferrer" className="transition hover:text-kreml">WhatsApp +62 813 3990 8765</a></li>
-              <li><a href="https://pintuweb.com" target="_blank" rel="noopener noreferrer" className="transition hover:text-kreml">pintuweb.com</a></li>
+              <li><a href="https://www.pintuweb.com" target="_blank" rel="noopener noreferrer" className="transition hover:text-kreml">pintuweb.com</a></li>
             </ul>
           </div>
         </div>
