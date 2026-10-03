@@ -2,7 +2,7 @@
 
 PortalLanding: 17 landing page dengan tujuan berbeda — click-through, lead gen, sales, webinar, hingga company profile.
 
-**Demo live:** https://portal-landing-seven.vercel.app
+**Demo live:** https://www.pintuweb.com/landing-page
 
 ![Tangkapan layar PortalLanding](public/og.jpg)
 

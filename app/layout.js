@@ -4,10 +4,10 @@ import { Syne, Inter } from 'next/font/google';
 const syne = Syne({ subsets: ['latin'], variable: '--font-syne', weight: ['600', '700', '800'] });
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 
-const __jsonld = {"@context":"https://schema.org","@type":"CollectionPage","name":"PortalLanding","description":"Koleksi 17 landing page","url":"https://portal-landing-seven.vercel.app","isPartOf":{"@type":"WebSite","name":"PintuWeb","url":"https://www.pintuweb.com"}};
+const __jsonld = {"@context":"https://schema.org","@type":"CollectionPage","name":"PortalLanding","description":"Koleksi 17 landing page","url":"https://www.pintuweb.com/landing-page","isPartOf":{"@type":"WebSite","name":"PintuWeb","url":"https://www.pintuweb.com"},"breadcrumb":{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"PintuWeb","item":"https://www.pintuweb.com"},{"@type":"ListItem","position":2,"name":"Landing Page","item":"https://www.pintuweb.com/landing-page"}]}};
 
 export const metadata = {
-  metadataBase: new URL("https://portal-landing-seven.vercel.app"),
+  metadataBase: new URL("https://www.pintuweb.com/landing-page"),
   title: "PortalLanding — Halaman yang Menjual",
   description: "PortalLanding: 17 landing page dengan tujuan berbeda — click-through, lead gen, sales, webinar, hingga company profile.",
   applicationName: "PortalLanding",
@@ -15,11 +15,11 @@ export const metadata = {
   authors: [{ name: "PortalLanding" }],
   creator: "PortalLanding",
   publisher: "PortalLanding",
-  alternates: { canonical: "https://portal-landing-seven.vercel.app" },
+  alternates: { canonical: "https://www.pintuweb.com/landing-page" },
   openGraph: {
     type: "website",
     locale: "id_ID",
-    url: "https://portal-landing-seven.vercel.app",
+    url: "https://www.pintuweb.com/landing-page",
     siteName: "PortalLanding",
     title: "PortalLanding — Halaman yang Menjual",
     description: "PortalLanding: 17 landing page dengan tujuan berbeda — click-through, lead gen, sales, webinar, hingga company profile.",

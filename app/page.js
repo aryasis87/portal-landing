@@ -36,9 +36,17 @@ export default function PortalLanding() {
 
   return (
     <div id="top" className="diag min-h-screen">
+      {/* Jejak: portal ini bagian dari PintuWeb */}
+      <nav aria-label="Jejak" className="bg-inkl text-kreml text-xs">
+        <ol className="mx-auto flex max-w-7xl px-4 sm:px-6 lg:px-8 items-center gap-2 py-1.5">
+          <li><a href="https://www.pintuweb.com" className="font-semibold underline-offset-4 hover:underline">PintuWeb</a></li>
+          <li aria-hidden="true" className="opacity-60">/</li>
+          <li aria-current="page">Landing Page</li>
+        </ol>
+      </nav>
       {/* Navbar */}
       <header className="sticky top-0 z-40 border-b-[3px] border-inkl bg-kreml/90 backdrop-blur-xl">
-        <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
+        <nav className="mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 py-3 sm:px-6 lg:px-8">
           <a href="#top" className="flex min-w-0 items-center gap-2 font-display text-base font-extrabold sm:text-lg">
             <span className="grid h-9 w-9 place-items-center border-[3px] border-inkl bg-oranyel text-white shadow-[3px_3px_0_var(--color-inkl)]"><Megaphone size={16} /></span>
             PortalLanding
@@ -273,7 +281,7 @@ export default function PortalLanding() {
             <p className="font-display text-xs font-bold uppercase tracking-widest text-oranyel">Hubungi</p>
             <ul className="mt-3 space-y-2">
               <li><a href={WA} target="_blank" rel="noopener noreferrer" className="transition hover:text-kreml">WhatsApp +62 813 3990 8765</a></li>
-              <li><a href="https://www.pintuweb.com" target="_blank" rel="noopener noreferrer" className="transition hover:text-kreml">pintuweb.com</a></li>
+              <li><a href="https://www.pintuweb.com" className="transition hover:text-kreml">pintuweb.com</a></li>
             </ul>
           </div>
         </div>
