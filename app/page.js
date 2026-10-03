@@ -138,6 +138,7 @@ export default function PortalLanding() {
                     </div>
                     <p className="mt-1 text-sm leading-relaxed text-mutedl">{t.description}</p>
                     <p className="mt-3 flex flex-wrap items-center gap-2 text-xs font-bold">
+                      {t.terjual > 0 && <span className="border-2 border-inkl bg-oranyel px-2 py-0.5 text-inkl">{t.terjual} terjual</span>}
                       <span className="border-2 border-inkl bg-white px-2 py-0.5">{t.halaman} halaman</span>
                       <span className="border-2 border-inkl bg-kreml px-2 py-0.5">{t.sorot}</span>
                     </p>
