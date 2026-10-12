@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Megaphone, ArrowDown, ArrowUpRight, MessageCircle, MousePointerClick, Target, TrendingUp, FileText, Paintbrush, Rocket, ChevronDown, Gauge, Search, Smartphone } from 'lucide-react';
 import { templates } from './components/templates-data';
 
-const WA = 'https://wa.me/6281339908765?text=Halo%2C%20saya%20tertarik%20template%20landing%20page%20di%20PortalLanding';
+const WA = 'https://wa.me/6285190931399?text=Halo%2C%20saya%20tertarik%20template%20landing%20page%20di%20PortalLanding';
 const KATEGORI = ['Semua', 'Click-Through', 'Lead Gen', 'Sales', 'Webinar', 'Produk', 'Platform', 'Profil'];
 
 const PROSES = [
@@ -26,7 +26,7 @@ const TANYA = [
   { q: 'Apakah termasuk copywriting?', a: 'Ya. Kami bantu menulis headline dan copy yang menjual berdasarkan brief-mu — kamu tinggal review dan setujui.' },
   { q: 'Bagaimana dengan formulir dan integrasi WhatsApp?', a: 'Semua CTA bisa diarahkan ke WhatsApp, formulir, e-commerce, atau link pembayaran. Kamu tentukan aksinya, kami pasang jalurnya.' },
   { q: 'Apakah halaman bisa dipakai untuk iklan (Meta/Google Ads)?', a: 'Sangat bisa — halaman ringan dan cepat justru menurunkan biaya iklan. Pixel/tag analytics juga bisa kami pasangkan.' },
-  { q: 'Berapa biayanya?', a: 'Paket Landing Page PintuWeb Rp600 ribu–Rp1,2 juta untuk satu halaman (desain, copy, tayang), selesai 1–3 hari kerja. Konsultasi dulu gratis; harga final menyesuaikan kebutuhan.' },
+  { q: 'Berapa biayanya?', a: 'Paket Landing Page PintuWeb Rp300 ribu–Rp600 ribu untuk satu halaman (desain, copy, tayang), selesai 1–3 hari kerja. Konsultasi dulu gratis; harga final menyesuaikan kebutuhan.' },
 ];
 
 export default function PortalLanding() {
@@ -280,7 +280,7 @@ export default function PortalLanding() {
           <div className="text-sm">
             <p className="font-display text-xs font-bold uppercase tracking-widest text-oranyel">Hubungi</p>
             <ul className="mt-3 space-y-2">
-              <li><a href={WA} target="_blank" rel="noopener noreferrer" className="transition hover:text-kreml">WhatsApp +62 813 3990 8765</a></li>
+              <li><a href={WA} target="_blank" rel="noopener noreferrer" className="transition hover:text-kreml">WhatsApp +62 851 9093 1399</a></li>
               <li><a href="https://www.pintuweb.com" className="transition hover:text-kreml">pintuweb.com</a></li>
             </ul>
           </div>
