@@ -11,14 +11,14 @@ const KATEGORI = ['Semua', 'Click-Through', 'Lead Gen', 'Sales', 'Webinar', 'Pro
 const PROSES = [
   { icon: FileText, no: '01', title: 'Kirim Brief', desc: 'Produk apa, target siapa, aksi apa yang kamu mau — cukup lewat WhatsApp.' },
   { icon: Paintbrush, no: '02', title: 'Kami Racik', desc: 'Copywriting + desain dari template pilihanmu, disesuaikan brand-mu.' },
-  { icon: Rocket, no: '03', title: 'Tayang & Menjual', desc: 'Halaman live dalam 1–3 hari kerja, siap menampung klik dan konversi.' },
+  { icon: Rocket, no: '03', title: 'Tayang & Menjual', desc: 'Halaman live dalam 1–2 hari kerja, siap menampung klik dan konversi.' },
 ];
 
 const JAMINAN = [
   { icon: Gauge, v: '90+', l: 'Target skor PageSpeed' },
   { icon: Search, v: 'SEO', l: 'Siap diranking' },
   { icon: Smartphone, v: '100%', l: 'Mobile-friendly' },
-  { icon: TrendingUp, v: '1–3 hari', l: 'Kerja sampai tayang' },
+  { icon: TrendingUp, v: '1–2 hari', l: 'Kerja sampai tayang' },
 ];
 
 const TANYA = [
@@ -26,7 +26,7 @@ const TANYA = [
   { q: 'Apakah termasuk copywriting?', a: 'Ya. Kami bantu menulis headline dan copy yang menjual berdasarkan brief-mu — kamu tinggal review dan setujui.' },
   { q: 'Bagaimana dengan formulir dan integrasi WhatsApp?', a: 'Semua CTA bisa diarahkan ke WhatsApp, formulir, e-commerce, atau link pembayaran. Kamu tentukan aksinya, kami pasang jalurnya.' },
   { q: 'Apakah halaman bisa dipakai untuk iklan (Meta/Google Ads)?', a: 'Sangat bisa — halaman ringan dan cepat justru menurunkan biaya iklan. Pixel/tag analytics juga bisa kami pasangkan.' },
-  { q: 'Berapa biayanya?', a: 'Paket Landing Page PintuWeb Rp300 ribu–Rp600 ribu untuk satu halaman (desain, copy, tayang), selesai 1–3 hari kerja. Konsultasi dulu gratis; harga final menyesuaikan kebutuhan.' },
+  { q: 'Berapa biayanya?', a: 'Paket Landing Page PintuWeb Rp300 ribu–Rp600 ribu untuk satu halaman (desain, copy, tayang), selesai 1–2 hari kerja. Konsultasi dulu gratis; harga final menyesuaikan kebutuhan.' },
 ];
 
 export default function PortalLanding() {
